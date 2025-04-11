@@ -1,14 +1,16 @@
 <!doctype html>
-<html lang="fr">
+<html lang="fr" data-bs-theme="dark">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="description" content="">
     <title>Corundum</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css">
+    <link rel="stylesheet" href="assets/css/style.css">
     <link rel="icon" href="assets/img/icon.png">
 </head>
-<body data-bs-theme="dark">
+<body>
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container">
             <a class="navbar-brand" href="#">
@@ -18,28 +20,143 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-auto">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="index.html">Accueil</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="views/about.html">À propos</a>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Nous
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end dropdown-menu-lg-start">
+                            <li><a class="dropdown-item" href="views/about.html">À propos</a></li>
+                            <li><a class="dropdown-item" href="views/team.html">Équipe</a></li>
+                            <li><a class="dropdown-item" href="views/graphic-charter.html">Charte graphique</a></li>
+                        </ul>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             Projets
                         </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Corundum maintenance</a></li>
+                        <ul class="dropdown-menu dropdown-menu-end dropdown-menu-lg-start">
+                            <li><a class="dropdown-item" href="views/projects/maintenance.html">Corundum maintenance</a></li>
+                            <li><a class="dropdown-item" href="views/projects/quick.html">Quick</a></li>
                         </ul>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
-    <div class="container">
-
+    <div class="container flex-fill">
+        <section class="home mt-4">
+            <h1 class="title">Bienvenue chez Corundum.</h1>
+            <div id="carousel" class="carousel slide">
+                <div class="carousel-inner rounded">
+                    <div class="carousel-item active">
+                        <img src="assets/img/projects/maintenance.png" class="d-block w-100" alt="Corundum maintenance">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5 class="text-white">Maintenance</h5>
+                            <p class="text-white">Maintenez votre poste Windows grâce à ce script.</p>
+                            <div class="btn-group">
+                                <a href="https://github.com/corundumproject/maintenance/releases/latest" target="_blank" class="btn btn-primary">Télécharger</a>
+                                <a href="views/projects/maintenance.html" class="btn btn-secondary">En savoir plus</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item rounded">
+                        <img src="assets/img/projects/quick.png" class="d-block w-100" alt="Corundum Quick">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5 class="text-white">Quick</h5>
+                            <p class="text-white">Téléchargez toutes vos applications macOS en un clin d'œil.</p>
+                            <div class="btn-group">
+                                <a href="https://corundumproject.github.io/quick" target="_blank" class="btn btn-primary">Ouvrir</a>
+                                <a href="views/projects/quick.html" class="btn btn-secondary">En savoir plus</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>
+        <section class="values mt-4">
+            <h2 class="text-center">Nos valeurs</h2>
+            <div class="row row-cols-1 row-cols-md-3 g-3 mt-2">
+                <div class="col">
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <i class="ri-global-fill fs-1"></i>
+                            <h5 class="card-title">Accessibilité</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <i class="ri-send-plane-fill fs-1"></i>
+                            <h5 class="card-title">Liberté</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <i class="ri-scales-3-fill fs-1"></i>
+                            <h5 class="card-title">Éthique</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <i class="ri-plant-fill fs-1"></i>
+                            <h5 class="card-title">Développement durable</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <i class="ri-eye-fill fs-1"></i>
+                            <h5 class="card-title">Transparence</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </div>
+    <footer class="container py-5">
+        <div class="row">
+            <div class="col-6 col-md-2 mb-3">
+                <h5>Corundum</h5>
+                <ul class="nav flex-column">
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">À propos</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Équipe</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Charte graphique</a></li>
+                </ul>
+            </div>
+            <div class="col-6 col-md-2 mb-3">
+                <h5>Projets</h5>
+                <ul class="nav flex-column">
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Corundum maintenance</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Corundum Quick</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+            <p>Conçu par Corundum</p>
+            <ul class="list-unstyled d-flex">
+                <li class="ms-3"><a class="link-body-emphasis link-underline-opacity-0" href="https://github.com/corundumproject/" target="_blank"><i class="ri-github-fill"></i></a></li>
+                <li class="ms-3"><a class="link-body-emphasis link-underline-opacity-0" href="https://discord.gg/2zX67vqh6b/" target="_blank"><i class="ri-discord-fill"></i></a></li>
+            </ul>
+        </div>
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
