@@ -1,6 +1,6 @@
 const container = document.querySelector(".team");
 
-fetch("https://corundumproject.github.io/assets/json/team.json")
+fetch("/assets/json/team.json")
     .then(response => {
         if (!response.ok) {
             throw new Error("Erreur lors du chargement du fichier JSON");
