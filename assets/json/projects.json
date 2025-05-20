@@ -1,0 +1,20 @@
+[
+  {
+    "name": "Maintenance",
+    "description": "Script pour Windows permettant d'administrer et de maintenir son poste",
+    "link": "https://github.com/corundumproject/maintenance",
+    "page": "maintenance.html"
+  },
+  {
+    "name": "Quick",
+    "description":  "Site permettant aux utilisateurs macOS et Linux de télécharger leurs applications en un éclair",
+    "link": "https://github.com/corundumproject/quick",
+    "page": "quick.html"
+  },
+  {
+    "name": "Fast",
+    "description":  "Client de bureau permettant d'installer, mettre à jour ou supprimer ses applications via Quick",
+    "link": "https://github.com/corundumproject/fast",
+    "page": "fast.html"
+  }
+]

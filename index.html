@@ -18,8 +18,9 @@
 <body>
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container">
-            <a class="navbar-brand" href="#">
-                <img src="assets/img/logo.png" alt="Logo" height="30" class="d-inline-block align-text-top rounded-circle">
+            <a class="navbar-brand" href="index.html">
+                <img src="assets/img/logo.png" alt="Logo" height="30" class="d-inline-block align-text-top rounded-circle me-1">
+                Corundum
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -44,6 +45,8 @@
                             Projets
                         </a>
                         <ul class="dropdown-menu dropdown-menu-end dropdown-menu-lg-start">
+                            <li><a class="dropdown-item" href="views/projects.html">Tous nos projets</a></li>
+                            <li><hr class="dropdown-divider"></li>
                             <li><a class="dropdown-item" href="views/projects/maintenance.html">Maintenance</a></li>
                             <li><a class="dropdown-item" href="views/projects/quick.html">Quick</a></li>
                         </ul>
@@ -54,36 +57,40 @@
     </nav>
     <div class="container flex-fill">
         <section class="home mt-4">
-            <div id="carousel" class="carousel slide">
-                <div class="carousel-inner rounded">
-                    <div class="carousel-item active">
-                        <img src="assets/img/projects/maintenance.png" class="d-block w-100" alt="Maintenance">
-                        <div class="carousel-caption d-none d-md-block">
-                            <div class="btn-group">
-                                <a href="https://github.com/corundumproject/maintenance/releases/latest" target="_blank" class="btn btn-primary">Télécharger <i class="ri-arrow-right-up-line"></i></a>
-                                <a href="views/projects/maintenance.html" class="btn btn-secondary">En savoir plus</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item rounded">
-                        <img src="assets/img/projects/quick.png" class="d-block w-100" alt="Quick">
-                        <div class="carousel-caption d-none d-md-block">
-                            <div class="btn-group">
-                                <a href="https://corundumproject.github.io/quick" target="_blank" class="btn btn-primary">Ouvrir <i class="ri-arrow-right-up-line"></i></a>
-                                <a href="views/projects/quick.html" class="btn btn-secondary">En savoir plus</a>
-                            </div>
+            <img src="assets/img/banner.png" alt="Hero" class="w-100 rounded">
+        </section>
+        <section class="values mt-4">
+            <h2 class="text-center">Nos projets</h2>
+            <div class="row row-cols-1 row-cols-md-3 g-3 mt-2">
+                <div class="col">
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Maintenance</h5>
+                            <p class="card-text">Script pour Windows permettant d'administrer et de maintenir son poste</p>
+                            <a class="btn btn-primary" href="views/projects/maintenance.html">En savoir plus</a>
                         </div>
                     </div>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
+                <div class="col">
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Quick</h5>
+                            <p class="card-text">Site permettant aux utilisateurs macOS et Linux de télécharger leurs applications en un éclair</p>
+                            <a class="btn btn-primary" href="views/projects/maintenance.html">En savoir plus</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Fast</h5>
+                            <p class="card-text">Client de bureau permettant d'installer, mettre à jour ou supprimer ses applications via Quick</p>
+                            <a class="btn btn-primary" href="views/projects/maintenance.html">En savoir plus</a>
+                        </div>
+                    </div>
+                </div>
             </div>
+            <a href="views/projects.html" class="d-block mt-2 text-end">En voir plus <i class="ri-arrow-right-line"></i></a>
         </section>
         <section class="values mt-4">
             <h2 class="text-center">Nos valeurs</h2>
@@ -136,16 +143,16 @@
             <div class="col-6 col-md-2 mb-3">
                 <h5>Corundum</h5>
                 <ul class="nav flex-column">
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">À propos</a></li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Équipe</a></li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Charte graphique</a></li>
+                    <li class="nav-item mb-2"><a href="views/about.html" class="nav-link p-0 text-body-secondary">À propos</a></li>
+                    <li class="nav-item mb-2"><a href="views/team.html" class="nav-link p-0 text-body-secondary">Équipe</a></li>
+                    <li class="nav-item mb-2"><a href="views/graphic-charter.html" class="nav-link p-0 text-body-secondary">Charte graphique</a></li>
                 </ul>
             </div>
             <div class="col-6 col-md-2 mb-3">
                 <h5>Projets</h5>
                 <ul class="nav flex-column">
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Maintenance</a></li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Quick</a></li>
+                    <li class="nav-item mb-2"><a href="views/projects/maintenance.html" class="nav-link p-0 text-body-secondary">Maintenance</a></li>
+                    <li class="nav-item mb-2"><a href="views/projects/quick.html" class="nav-link p-0 text-body-secondary">Quick</a></li>
                 </ul>
             </div>
         </div>
