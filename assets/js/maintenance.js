@@ -9,28 +9,8 @@ fetch("/assets/json/projects/maintenance.json")
         return response.json();
     })
     .then(data => {
-        container.innerHTML = "";
-        if (data.length === 0) {
-            const col = document.createElement("div");
-            col.classList.add("col");
-
-            const card = document.createElement("div");
-            card.classList.add("card");
-
-            const cardBody = document.createElement("div");
-            cardBody.classList.add("card-body", "text-center");
-
-            const title = document.createElement("h5");
-            title.classList.add("card-title");
-            title.textContent = "Aucune nouvelle";
-
-            cardBody.appendChild(title);
-            card.appendChild(cardBody);
-            col.appendChild(card);
-            container.appendChild(col);
-            return;
-        }
         data.forEach(news => {
+            container.innerHTML = "";
             if (newsCount < 3) {
                 const col = document.createElement("div");
                 col.classList.add("col");

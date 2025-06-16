@@ -1,7 +1,7 @@
 const container = document.querySelector(".news-container");
 let newsCount = 0;
 
-fetch("/assets/json/projects/quick.json")
+fetch("/assets/json/news.json")
     .then(response => {
         if (!response.ok) {
             throw new Error("Erreur lors du chargement du fichier JSON");
@@ -11,7 +11,7 @@ fetch("/assets/json/projects/quick.json")
     .then(data => {
         data.forEach(news => {
             container.innerHTML = "";
-            if (newsCount < 3) {
+            if (newsCount < 6) {
                 const col = document.createElement("div");
                 col.classList.add("col");
 
