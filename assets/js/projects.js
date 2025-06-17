@@ -28,18 +28,18 @@ fetch("/assets/json/projects.json")
             description.textContent = project.description;
 
             const buttonGroup = document.createElement("div");
-            buttonGroup.classList.add("btn-group");
+            buttonGroup.classList.add("btn-group", "mt-2", "mb-2", "w-100");
             buttonGroup.role = "group";
             buttonGroup.ariaLabel = project.name;
 
             const link = document.createElement("a");
-            link.classList.add("btn", "btn-primary");
+            link.classList.add("btn", "btn-primary", "w-50");
             link.textContent = "GitHub";
             link.href = project.link;
             link.target = "_blank";
 
             const page = document.createElement("a");
-            page.classList.add("btn", "btn-secondary");
+            page.classList.add("btn", "btn-secondary", "w-50");
             page.textContent = "En savoir plus";
             page.href = "projects/" + project.page;
 
