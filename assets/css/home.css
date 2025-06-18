@@ -1,8 +1,10 @@
+/* Image couvrant entièrement la page d'accueil avec position fixe */
 .home {
     background: url("../img/hero.png") no-repeat center center fixed;
     background-size: cover;
 }
 
+/* Dimensions du logo */
 .logo {
     width: 128px;
     height: 128px;

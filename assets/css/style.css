@@ -1,3 +1,4 @@
+/* Fait en sorte que le footer reste en bas de page */
 body {
     min-height: 100vh;
     display: flex;
