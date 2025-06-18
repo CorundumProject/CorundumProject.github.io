@@ -11,6 +11,7 @@ fetch("/assets/json/projects/maintenance.json")
     .then(data => {
         data.forEach(news => {
             container.innerHTML = "";
+            // Limite à 3 actualités maximum
             if (newsCount < 3) {
                 const col = document.createElement("div");
                 col.classList.add("col");
@@ -29,11 +30,13 @@ fetch("/assets/json/projects/maintenance.json")
                 description.classList.add("card-text");
                 description.textContent = news.description;
 
+                // Bouton avec lien vers la page détaillée
                 const link = document.createElement("a");
                 link.classList.add("btn", "btn-primary", "mt-2", "mb-2", "w-100");
                 link.textContent = "En savoir plus";
                 link.href = news.link;
 
+                // Construction de la hiérarchie des éléments DOM
                 cardBody.appendChild(title);
                 cardBody.appendChild(description);
                 cardBody.appendChild(link);
