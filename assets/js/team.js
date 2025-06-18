@@ -1,5 +1,7 @@
+// Sélection du conteneur pour la grille des membres de l'équipe
 const container = document.querySelector(".team");
 
+// Récupération et traitement du fichier JSON contenant les données de l'équipe
 fetch("/assets/json/team.json")
     .then(response => {
         if (!response.ok) {
@@ -8,17 +10,22 @@ fetch("/assets/json/team.json")
         return response.json();
     })
     .then(data => {
+        // Réinitialisation du conteneur
         container.innerHTML = "";
+
+        // Création d'une carte Bootstrap pour chaque membre
         data.forEach(team => {
             const col = document.createElement("div");
             col.classList.add("col");
 
+            // Structure de la carte
             const card = document.createElement("div");
             card.classList.add("card");
 
             const cardBody = document.createElement("div");
             cardBody.classList.add("card-body", "text-center");
 
+            // Création et configuration des éléments de la carte
             const avatar = document.createElement("img");
             avatar.src = team.avatar;
             avatar.classList.add("avatar", "rounded", "mb-2");
@@ -37,6 +44,7 @@ fetch("/assets/json/team.json")
             link.textContent = "GitHub";
             link.href = team.link;
 
+            // Assemblage de la structure HTML
             cardBody.appendChild(avatar);
             cardBody.appendChild(name);
             cardBody.appendChild(role);

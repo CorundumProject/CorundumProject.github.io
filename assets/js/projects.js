@@ -1,5 +1,6 @@
 const container = document.querySelector(".projects");
 
+// Récupération et affichage des projets depuis le fichier JSON
 fetch("/assets/json/projects.json")
     .then(response => {
         if (!response.ok) {
@@ -23,31 +24,19 @@ fetch("/assets/json/projects.json")
             name.classList.add("card-title");
             name.textContent = project.name;
 
-            const description = document.createElement("p");
+            const description = document.createElement("h6");
             description.classList.add("card-text");
             description.textContent = project.description;
 
-            const buttonGroup = document.createElement("div");
-            buttonGroup.classList.add("btn-group");
-            buttonGroup.role = "group";
-            buttonGroup.ariaLabel = project.name;
-
             const link = document.createElement("a");
-            link.classList.add("btn", "btn-primary");
-            link.textContent = "GitHub";
-            link.href = project.link;
-            link.target = "_blank";
+            link.classList.add("btn", "btn-primary", "w-100");
+            link.textContent = "En savoir plus";
+            link.href = "views/projects/" + project.page;
 
-            const page = document.createElement("a");
-            page.classList.add("btn", "btn-secondary");
-            page.textContent = "En savoir plus";
-            page.href = "projects/" + project.page;
-
+            // Assemblage du DOM
             cardBody.appendChild(name);
             cardBody.appendChild(description);
-            buttonGroup.appendChild(link);
-            buttonGroup.appendChild(page);
-            cardBody.appendChild(buttonGroup);
+            cardBody.appendChild(link);
             card.appendChild(cardBody);
             col.appendChild(card);
             container.appendChild(col);
