@@ -1,6 +1,7 @@
 const container = document.querySelector(".news-container");
 let newsCount = 0;
 
+// Charge les 3 actualités les plus récentes depuis le JSON
 fetch("/assets/json/projects/quick.json")
     .then(response => {
         if (!response.ok) {
@@ -10,8 +11,11 @@ fetch("/assets/json/projects/quick.json")
     })
     .then(data => {
         data.forEach(news => {
+            // Réinitialise le container à chaque itération
             container.innerHTML = "";
+
             if (newsCount < 3) {
+                // Structure Bootstrap pour la grille responsive
                 const col = document.createElement("div");
                 col.classList.add("col");
 
@@ -34,6 +38,7 @@ fetch("/assets/json/projects/quick.json")
                 link.textContent = "En savoir plus";
                 link.href = news.link;
 
+                // Assemblage des éléments du DOM
                 cardBody.appendChild(title);
                 cardBody.appendChild(description);
                 cardBody.appendChild(link);
