@@ -24,7 +24,8 @@
                  src="../../assets/img/logo.png">
             Corundum
         </a>
-        <button aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler"
+        <button aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"
+                class="navbar-toggler"
                 data-bs-target="#navbarSupportedContent" data-bs-toggle="collapse" type="button">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -68,21 +69,97 @@
     </div>
 </nav>
 <div class="container flex-fill">
-    <section class="presentation mt-4 text-center">
-        <h2 class="title">Maintenance</h2>
-        <p class="text"><span class="fw-semibold">Corundum Maintenance</span> est un script pour Windows permettant
-            d'administrer et de maintenir son poste de travail.</p>
-        <a class="btn btn-primary" href="https://github.com/corundumproject/maintenance/releases/latest"
-           target="_blank">Télécharger <i class="ri-arrow-right-up-line"></i></a>
-        <div class="w-100 my-4">
-            <img alt="Capture d'écran" src="../../assets/img/captures/maintenance/main.png">
+    <section class="presentation px-4 pt-5 my-5 text-center border-bottom">
+        <h1 class="display-4 fw-bold text-body-emphasis">Maintenance</h1>
+        <div class="col-lg-6 mx-auto">
+            <p class="lead mb-4">Maintenez et administrez votre poste de travail Windows sans le moindre effort.</p>
+            <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
+                <a class="btn btn-primary btn-lg px-4 me-sm-3"
+                   href="https://github.com/corundumproject/maintenance/releases/latest" target="_blank">Télécharger <i
+                        class="ri-arrow-right-up-line"></i></a>
+                <a class="btn btn-outline-secondary btn-lg px-4" href="#start">Découvrir</a>
+            </div>
+        </div>
+        <div class="overflow-hidden" style="max-height: 40vh;">
+            <div class="container px-5">
+                <img alt="Capture d'écran" class="img-fluid mb-4" height="500"
+                     loading="lazy" src="../../assets/img/captures/maintenance/main.png" width="700">
+            </div>
         </div>
     </section>
-    <section class="functions text-center">
+
+    <section class="discover container px-4 py-5" id="start">
+        <div class="row featurette g-4">
+            <div class="col-md-7 d-flex flex-column justify-content-center text-center text-md-start order-1 order-md-0">
+                <h2 class="featurette-heading fw-normal lh-1">Utilisateurs</h2>
+                <p class="lead">Un moyen rapide et efficace de gérer des utilisateurs ainsi que des paramètres
+                    supplémentaires liés au fonctionnement de ces derniers.</p>
+            </div>
+            <div class="col-md-5 order-0 order-md-1">
+                <div class="overflow-hidden">
+                    <img alt="Fonction d'utilisateur" class="img-fluid w-100"
+                         src="../../assets/img/captures/maintenance/user.png">
+                </div>
+            </div>
+        </div>
+        <div class="row featurette g-4 mt-5">
+            <div class="col-md-7 d-flex flex-column justify-content-center text-center text-md-end order-1">
+                <h2 class="featurette-heading fw-normal lh-1">Logiciels</h2>
+                <p class="lead">Installez, mettez à jour et supprimez des logiciels via <a
+                        href="https://learn.microsoft.com/fr-fr/windows/package-manager/winget/"
+                        target="_blank">winget</a>.</p>
+            </div>
+            <div class="col-md-5 order-0">
+                <div class="overflow-hidden">
+                    <img alt="Paramètres" class="img-fluid w-100"
+                         src="../../assets/img/captures/maintenance/software.png">
+                </div>
+            </div>
+        </div>
+        <div class="row featurette g-4">
+            <div class="col-md-7 d-flex flex-column justify-content-center text-center text-md-start order-1 order-md-0">
+                <h2 class="featurette-heading fw-normal lh-1">Services</h2>
+                <p class="lead">Démarrez et gérez tous vos services systèmes sans le moindre effort.</p>
+            </div>
+            <div class="col-md-5 order-0 order-md-1">
+                <div class="overflow-hidden">
+                    <img alt="Paramètres" class="img-fluid w-100"
+                         src="../../assets/img/captures/maintenance/service.png">
+                </div>
+            </div>
+        </div>
+
+        <div class="row featurette g-4 mt-5">
+            <div class="col-md-7 d-flex flex-column justify-content-center text-center text-md-end order-1">
+                <h2 class="featurette-heading fw-normal lh-1">Réparation</h2>
+                <p class="lead">Un problème ? Effectuez les actions les plus courantes et recommandées en cas de
+                    problème.</p>
+            </div>
+            <div class="col-md-5 order-0">
+                <div class="overflow-hidden">
+                    <img alt="Réparation" class="img-fluid w-100"
+                         src="../../assets/img/captures/maintenance/repair.png">
+                </div>
+            </div>
+        </div>
+        <div class="row featurette g-4 mt-5">
+            <div class="col-md-7 d-flex flex-column justify-content-center text-center text-md-start order-1">
+                <h2 class="featurette-heading fw-normal lh-1">Utilitaires</h2>
+                <p class="lead">Une boîte à outil pratique pour démarrer des utilitaires en ligne et locaux.</p>
+            </div>
+            <div class="col-md-5 order-0 order-md-1">
+                <div class="overflow-hidden">
+                    <img alt="Paramètres" class="img-fluid w-100"
+                         src="../../assets/img/captures/maintenance/utility.png">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="functions container px-4 py-5 text-center">
         <h2 class="title">Fonctionnalités</h2>
         <div class="row row-cols-1 row-cols-md-3 g-3 mt-2">
             <div class="col">
-                <div class="card">
+                <div class="card border-0">
                     <div class="card-body text-center">
                         <i class="ri-user-settings-fill fs-1"></i>
                         <h5 class="card-title">Gestion des utilisateurs</h5>
@@ -90,7 +167,7 @@
                 </div>
             </div>
             <div class="col">
-                <div class="card">
+                <div class="card border-0">
                     <div class="card-body text-center">
                         <i class="ri-app-store-fill fs-1"></i>
                         <h5 class="card-title">Gestion des applications</h5>
@@ -98,7 +175,7 @@
                 </div>
             </div>
             <div class="col">
-                <div class="card">
+                <div class="card border-0">
                     <div class="card-body text-center">
                         <i class="ri-settings-4-fill fs-1"></i>
                         <h5 class="card-title">Gestion des services</h5>
@@ -106,15 +183,15 @@
                 </div>
             </div>
             <div class="col">
-                <div class="card">
+                <div class="card border-0">
                     <div class="card-body text-center">
                         <i class="ri-skip-down-line fs-1"></i>
-                        <h5 class="card-title">Utilitaires externes</h5>
+                        <h5 class="card-title">Utilitaires</h5>
                     </div>
                 </div>
             </div>
             <div class="col">
-                <div class="card">
+                <div class="card border-0">
                     <div class="card-body text-center">
                         <i class="ri-service-fill fs-1"></i>
                         <h5 class="card-title">Assistant de réparation</h5>
@@ -123,13 +200,17 @@
             </div>
         </div>
     </section>
+    <section class="foss text-center mt-4">
+        <h2 class="title">Open-source</h2>
+        <p class="text"><span class="fw-semibold">Corundum Maintenance</span> est construit dans un aspect communautaire :
+            vous pouvez contribuer à l'amélioration du projet, suggérer des fonctionnalités et des applications…</p>
+    </section>
     <section class="why text-center mt-4">
         <h2 class="title">Pourquoi Maintenance ?</h2>
-        <p class="text w-50 mx-auto"><span class="fw-semibold">Corundum Maintenance</span> est un outil en constante
-            évolution qui peut vous accompagner dès que vous aurez besoin d&#39;un utilitaire.</p>
-        <p class="text w-50 mx-auto">Que vous soyez débutant ou expérimenté dans l&#39;administration de postes de
-            travail, <span class="fw-semibold">Corundum Maintenance</span> sera un véritable atout dans votre routine.
-        </p>
+        <p class="text"><span class="fw-semibold">Corundum Maintenance</span> est un outil en constante évolution qui
+            peut vous accompagner dès que vous aurez besoin d'un utilitaire.</p>
+        <p class="text">Que vous soyez débutant ou expérimenté dans l'administration de postes de travail, <span
+                class="fw-semibold">Corundum Maintenance</span> sera un véritable atout dans votre routine.</p>
         <div aria-label="Basic example" class="btn-group" role="group">
             <a class="btn btn-primary" href="https://github.com/corundumproject/maintenance/releases/latest"
                target="_blank">Télécharger <i class="ri-arrow-right-up-line"></i></a>
