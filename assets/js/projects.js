@@ -31,7 +31,7 @@ fetch("/assets/json/projects.json")
             const link = document.createElement("a");
             link.classList.add("btn", "btn-primary", "w-100");
             link.textContent = "En savoir plus";
-            link.href = "views/projects/" + project.page;
+            link.href = "projects/" + project.page;
 
             // Assemblage du DOM
             cardBody.appendChild(name);
