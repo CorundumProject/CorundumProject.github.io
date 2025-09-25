@@ -20,6 +20,10 @@ fetch("/assets/json/projects.json")
             const cardBody = document.createElement("div");
             cardBody.classList.add("card-body", "text-center");
 
+            const icon = document.createElement("img");
+            icon.classList.add("card-img");
+            icon.src = project.icon;
+
             const name = document.createElement("h5");
             name.classList.add("card-title");
             name.textContent = project.name;
@@ -34,6 +38,7 @@ fetch("/assets/json/projects.json")
             link.href = "projects/" + project.page;
 
             // Assemblage du DOM
+            cardBody.appendChild(icon);
             cardBody.appendChild(name);
             cardBody.appendChild(description);
             cardBody.appendChild(link);
