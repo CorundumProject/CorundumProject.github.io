@@ -51,7 +51,7 @@ fetch("/assets/json/news.json")
                 newsCount++;
             }
         });
-    })
+   })
     .catch(error => console.error("Erreur :", error));
 
 // Récupération et affichage des projets depuis le fichier JSON
@@ -77,7 +77,7 @@ fetch("/assets/json/projects.json")
                 const cardBody = document.createElement("div");
                 cardBody.classList.add("card-body", "text-center");
 const icon = document.createElement("img");
-                            icon.classList.add("card-img", "h-25");
+                            icon.classList.add("card-img", "project-icon", "text-center");
                             icon.src = project.icon;
                 const name = document.createElement("h5");
                 name.classList.add("card-title");

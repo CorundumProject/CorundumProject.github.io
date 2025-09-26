@@ -21,7 +21,7 @@ fetch("/assets/json/projects.json")
             cardBody.classList.add("card-body", "text-center");
 
             const icon = document.createElement("img");
-            icon.classList.add("card-img", "h-25");
+            icon.classList.add("card-img", "project-icon", "text-center");
             icon.src = project.icon;
 
             const name = document.createElement("h5");
