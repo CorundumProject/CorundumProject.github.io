@@ -9,3 +9,7 @@ body {
 main {
     flex: 1;
 }
+
+.project-icon {
+	height: 64px;
+}
